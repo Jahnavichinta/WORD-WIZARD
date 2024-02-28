@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.geometry("350x360")
-root.title("masthIshQ")
+root.title("WORD WIZARD")
 root.configure(background="peru")
 
 Tops = tk.Frame(root, bg="peru", pady=2, width=300, height=70, relief="ridge")
@@ -16,7 +16,7 @@ Mid.grid(row=1, column=0)
 Down = tk.Frame(root, bg="peru", pady=2, width=300, height=80, relief="ridge")
 Down.grid(row=2, column=0, pady=(0, 10))
 
-lblTitle = tk.Label(Tops, font=("arial", 15, "bold"), text="                 masthIshQ             ", bd=15, bg="peru", fg="cornsilk")
+lblTitle = tk.Label(Tops, font=("arial", 15, "bold"), text="                WORD WIZARD            ", bd=15, bg="peru", fg="cornsilk")
 lblTitle.grid(row=0, column=0)
 
 name_label = tk.Label(Mid, font=("arial", 15, "bold"), text="Name", bd=15, bg="peru", fg="cornsilk")

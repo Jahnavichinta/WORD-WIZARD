@@ -5,27 +5,27 @@ from tkinter import messagebox
 root = tk.Tk()
 root.geometry("350x360")
 root.title("WORD WIZARD")
-root.configure(background="peru")
+root.configure(background="#F3CCF3")
 
-Tops = tk.Frame(root, bg="peru", pady=2, width=300, height=70, relief="ridge")
+Tops = tk.Frame(root, bg="#F3CCF3", pady=2, width=300, height=70, relief="ridge")
 Tops.grid(row=0, column=0, pady=(10, 0))
 
-Mid = tk.Frame(root, bg="peru", pady=2, width=300, height=150, relief="ridge")
+Mid = tk.Frame(root, bg="#F3CCF3", pady=2, width=300, height=150, relief="ridge")
 Mid.grid(row=1, column=0)
 
-Down = tk.Frame(root, bg="peru", pady=2, width=300, height=80, relief="ridge")
+Down = tk.Frame(root, bg="#F3CCF3", pady=2, width=300, height=80, relief="ridge")
 Down.grid(row=2, column=0, pady=(0, 10))
 
-lblTitle = tk.Label(Tops, font=("arial", 15, "bold"), text="                WORD WIZARD            ", bd=15, bg="peru", fg="cornsilk")
+lblTitle = tk.Label(Tops, font=("arial", 15, "bold"), text="              WORD WIZARD           ", bd=15, bg="#F3CCF3", fg="#5D3587")
 lblTitle.grid(row=0, column=0)
 
-name_label = tk.Label(Mid, font=("arial", 15, "bold"), text="Name", bd=15, bg="peru", fg="cornsilk")
+name_label = tk.Label(Mid, font=("arial", 15, "bold"), text="Name", bd=15, bg="#F3CCF3", fg="#5D3587")
 name_label.grid(row=0, column=0, padx=(10, 0))
 
 entry_name = tk.Entry(Mid)
 entry_name.grid(row=0, column=1)
 
-age_label = tk.Label(Mid, font=("arial", 15, "bold"), text="Age", bd=15, bg="peru", fg="cornsilk")
+age_label = tk.Label(Mid, font=("arial", 15, "bold"), text="Age", bd=15, bg="#F3CCF3", fg="#5D3587")
 age_label.grid(row=1, column=0, padx=(10, 0))
 
 entry_age = tk.Entry(Mid)
@@ -55,7 +55,7 @@ def submit():
     conn.commit()
     conn.close()
 
-submit_button = tk.Button(Down, text="Submit", font=("Arial", 10, "bold"), width=6, bg="bisque", command=checker)
+submit_button = tk.Button(Down, text="Submit", font=("Arial", 10, "bold"), width=6, fg="#392467", bg = "#FFE5E5", command=checker)
 submit_button.grid(row=0, column=0, pady=10)
 
 root.mainloop()
